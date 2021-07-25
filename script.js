@@ -59,6 +59,7 @@ function Timer() {
     if (mins < 0 || secs < 0) {
       clearInterval(x);
       audio.play();
+      confetti.start();
     }
   }, 1000);
 }
@@ -81,4 +82,5 @@ startbtn.addEventListener("click", function () {
 
 resetbtn.addEventListener("click", () => {
   reset();
+  confetti.stop();
 });
