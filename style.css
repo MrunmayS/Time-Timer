@@ -1,0 +1,8 @@
+.pieChart {
+  background-color: #df2929;
+  width: 250px;
+  height: 250px;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+}
