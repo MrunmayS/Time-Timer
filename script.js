@@ -15,9 +15,12 @@ let end,
   right,
   left,
   slice,
-  isPause;
+  isPause,
+  audio;
 let line = [];
 isPause;
+
+audio = new Audio("alarm_bird_clock.mp3");
 
 options.addEventListener("change", function () {
   minutes = parseInt(this.value);
@@ -55,6 +58,7 @@ function Timer() {
     });
     if (mins < 0 || secs < 0) {
       clearInterval(x);
+      audio.play();
     }
   }, 1000);
 }
