@@ -2,7 +2,7 @@ const startbtn = document.querySelector("#start");
 const resetbtn = document.querySelector("#reset");
 let options = document.querySelector("#setTime");
 
-let minutes = 15;
+let minutes = 1;
 let end,
   start,
   length,
